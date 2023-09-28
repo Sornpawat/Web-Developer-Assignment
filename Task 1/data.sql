@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2023 at 09:03 PM
+-- Generation Time: Sep 28, 2023 at 09:04 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,7 +31,7 @@ CREATE TABLE `course` (
   `c_id` int(11) UNSIGNED NOT NULL,
   `c_name` text NOT NULL,
   `c_description` text NOT NULL,
-  `c_price` decimal(20,2) NOT NULL
+  `c_price` decimal(65,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
