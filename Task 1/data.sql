@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2023 at 01:45 PM
+-- Generation Time: Sep 28, 2023 at 09:03 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -55,8 +55,8 @@ CREATE TABLE `enroll` (
   `cer_id` int(10) UNSIGNED NOT NULL,
   `m_id` int(10) UNSIGNED NOT NULL,
   `c_id` int(10) UNSIGNED NOT NULL,
-  `cer_start` date NOT NULL,
-  `cer_expire` date NOT NULL
+  `cer_start` datetime NOT NULL,
+  `cer_expire` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -64,11 +64,8 @@ CREATE TABLE `enroll` (
 --
 
 INSERT INTO `enroll` (`cer_id`, `m_id`, `c_id`, `cer_start`, `cer_expire`) VALUES
-(17, 5, 6, '0000-00-00', '0000-00-00'),
-(19, 5, 6, '0000-00-00', '0000-00-00'),
-(20, 5, 6, '0000-00-00', '0000-00-00'),
-(21, 5, 6, '0000-00-00', '0000-00-00'),
-(22, 5, 6, '0000-00-00', '0000-00-00');
+(23, 5, 6, '2023-09-14 00:00:00', '2023-09-25 00:00:00'),
+(24, 3, 1, '2023-08-02 00:58:00', '2023-09-02 00:58:00');
 
 -- --------------------------------------------------------
 
@@ -104,7 +101,8 @@ INSERT INTO `member` (`m_id`, `m_email`, `m_password`, `m_name`) VALUES
 (17, 'pae@gmail.com', '123456', 'paeth'),
 (18, 'pae@gmail.com', '123456', 'paeth'),
 (19, 'pae@gmail.com', '123456', 'paeth'),
-(21, 'pae@gmail.com', '123456', 'paeth');
+(21, 'pae@gmail.com', '123456', 'paeth'),
+(23, 'pae@gmail.com', '123456', 'sornpawat hiranyanon');
 
 --
 -- Indexes for dumped tables
@@ -146,13 +144,13 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `enroll`
 --
 ALTER TABLE `enroll`
-  MODIFY `cer_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `cer_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `m_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `m_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Constraints for dumped tables
