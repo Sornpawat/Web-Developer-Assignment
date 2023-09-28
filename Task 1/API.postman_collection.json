@@ -359,7 +359,7 @@
 					"response": []
 				},
 				{
-					"name": "POST /enrolls/{c_id}",
+					"name": "GET /enrolls/{cer_id}",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -368,7 +368,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"m_email\" : \"\",\r\n    \"m_password\" : \"\",\r\n    \"m_name\" : \"\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -391,7 +391,7 @@
 					"response": []
 				},
 				{
-					"name": "PUT /enrolls/{c_id}",
+					"name": "PUT /enrolls/{cer_id}",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -420,7 +420,7 @@
 					"response": []
 				},
 				{
-					"name": "DEL /enrolls/{m_id}",
+					"name": "DEL /enrolls/{cer_id}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
